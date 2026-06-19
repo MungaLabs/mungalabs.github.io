@@ -3,42 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mungalabs - Professional Developer Hub</title>
+    <title>Mungalabs Developer Hub</title>
     <style>
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #f4f7f6; }
-        .container { background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
-        header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #3498db; padding-bottom: 20px; }
-        .app-item { border: 1px solid #eee; padding: 25px; border-radius: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; transition: 0.3s; }
-        .app-item:hover { border-color: #3498db; }
-        .btn { background: #3498db; color: #fff; padding: 10px 20px; text-decoration: none; border-radius: 6px; font-weight: bold; }
-        .btn-outline { background: transparent; color: #3498db; border: 2px solid #3498db; margin-left: 10px; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .hub-container {
+            background: white;
+            width: 100%;
+            max-width: 800px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.05);
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        .divider {
+            height: 3px;
+            background-color: #3498db;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .project-card {
+            border: 1px solid #edf2f7;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+        .project-info {
+            flex: 1;
+        }
+        .project-title {
+            color: #2980b9;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .project-desc {
+            color: #7f8c8d;
+            font-size: 1rem;
+        }
+        .button-group {
+            display: flex;
+            gap: 12px;
+        }
+        .btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: 0.2s;
+            text-align: center;
+        }
+        .btn-privacy {
+            background-color: #27ae60;
+            color: white;
+        }
+        .btn-privacy:hover {
+            background-color: #219150;
+        }
+        .btn-resources {
+            border: 2px solid #3498db;
+            color: #3498db;
+            background: transparent;
+        }
+        .btn-resources:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header><h1>Mungalabs Developer Hub</h1></header>
-        <div class="app-list">
-            <!-- Accountryx -->
-            <div class="app-item">
-                <div>
-                    <h2 style="margin:0; color:#2980b9;">Accountryx</h2>
-                    <p style="margin:5px 0; color:#7f8c8d;">Accounting Mastery Platform</p>
-                </div>
-                <div>
-                    <a href="https://mungalabs.github.io/accountryx/privacy.html" class="btn">Privacy</a>
-                    <a href="https://github.com/MungaLabs/mungalabs.github.io/tree/main/accountryx" class="btn btn-outline">Resources</a>
-                </div>
+
+    <div class="hub-container">
+        <h1>Mungalabs Developer Hub</h1>
+        <div class="divider"></div>
+
+        <!-- Hyper Pong (New Release) -->
+        <div class="project-card">
+            <div class="project-info">
+                <div class="project-title">Hyper Pong Speed Challenge</div>
+                <div class="project-desc">Join the Top 1% Speed Elite. Master the Hyper Swing in this high-intensity arcade challenge.</div>
             </div>
-            <!-- RideReady -->
-            <div class="app-item">
-                <div>
-                    <h2 style="margin:0; color:#2980b9;">RideReady: Smart Bike Weather</h2>
-                    <p style="margin:5px 0; color:#7f8c8d;">Smart Bike Weather</p>
-                </div>
-                <a href="https://mungalabs.github.io/rideready/privacy.html" class="btn">Privacy</a>
+            <div class="button-group">
+                <a href="privacy_policy.html" class="btn btn-privacy">Privacy</a>
             </div>
         </div>
+
+        <!-- Accountryx -->
+        <div class="project-card">
+            <div class="project-info">
+                <div class="project-title">Accountryx</div>
+                <div class="project-desc">Professional Accounting Mastery Platform (Lessons, Quizzes & Notes)</div>
+            </div>
+            <div class="button-group">
+                <a href="#" class="btn btn-privacy">Privacy</a>
+                <a href="#" class="btn btn-resources">Resources</a>
+            </div>
+        </div>
+
+        <!-- RideReady -->
+        <div class="project-card">
+            <div class="project-info">
+                <div class="project-title">RideReady: Smart Bike Weather</div>
+                <div class="project-desc">Safety and weather alerts for cyclists.</div>
+            </div>
+            <div class="button-group">
+                <a href="#" class="btn btn-privacy">Privacy</a>
+            </div>
+        </div>
+
+        <footer>
+            &copy; 2026 Munga Labs &bull; Professional App Portfolio
+        </footer>
     </div>
-    <footer style="text-align:center; margin-top:40px; color:#7f8c8d; font-size:0.9em;">&copy; 2026 Mungalabs</footer>
+
 </body>
 </html>
