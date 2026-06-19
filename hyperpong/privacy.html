@@ -3,116 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Hyper Pong Speed Challenge</title>
+    <title>Mungalabs Developer Hub</title>
     <style>
-        :root {
-            --primary-color: #00d2ff;
-            --secondary-color: #3a7bd5;
-            --text-dark: #2c3e50;
-            --text-light: #546e7a;
-            --bg-light: #f5f7fa;
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
         }
-        body { 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.8; 
-            color: var(--text-dark); 
-            max-width: 900px; 
-            margin: 0 auto; 
-            padding: 50px 25px;
-            background-color: var(--bg-light);
-        }
-        .container {
-            background: #ffffff;
+        .hub-container {
+            background: white;
+            width: 100%;
+            max-width: 800px;
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-radius: 15px;
+            box-shadow: 0 4px 25px rgba(0,0,0,0.05);
         }
-        h1 { 
-            color: var(--secondary-color); 
-            font-size: 2.5em;
-            margin-bottom: 30px;
-            border-left: 8px solid var(--primary-color);
-            padding-left: 20px;
-        }
-        h2 { 
-            color: var(--secondary-color); 
-            font-size: 1.5em;
-            margin-top: 40px; 
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        h3 { color: var(--text-dark); margin-top: 25px; }
-        p, li { color: var(--text-light); font-size: 1.1em; }
-        b, strong { color: var(--text-dark); font-weight: 700; }
-        a { color: var(--secondary-color); text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s; }
-        a:hover { border-bottom: 1px solid var(--secondary-color); }
-        .highlight-box {
-            background: #eef2f7;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-right: 4px solid var(--secondary-color);
-        }
-        .footer { 
-            margin-top: 60px; 
-            font-size: 0.95em; 
-            color: #95a5a6; 
+        h1 {
+            color: #2c3e50;
             text-align: center;
-            border-top: 1px solid #eee; 
-            padding-top: 30px; 
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+        .divider {
+            height: 3px;
+            background-color: #3498db;
+            width: 100%;
+            margin-bottom: 40px;
+        }
+        .project-card {
+            border: 1px solid #edf2f7;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.03);
+        }
+        .project-info {
+            flex: 1;
+        }
+        .project-title {
+            color: #2980b9;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .project-desc {
+            color: #7f8c8d;
+            font-size: 1rem;
+        }
+        .button-group {
+            display: flex;
+            gap: 12px;
+        }
+        .btn {
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.95rem;
+            transition: 0.2s;
+            text-align: center;
+        }
+        .btn-privacy {
+            background-color: #27ae60;
+            color: white;
+        }
+        .btn-privacy:hover {
+            background-color: #219150;
+        }
+        .btn-resources {
+            border: 2px solid #3498db;
+            color: #3498db;
+            background: transparent;
+        }
+        .btn-resources:hover {
+            background-color: #3498db;
+            color: white;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #bdc3c7;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        footer strong {
+            color: #2c3e50;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        
-        <p><strong>Munga Labs</strong> operates the <strong>Hyper Pong Speed Challenge</strong> mobile application. This Service is provided at <strong>no cost</strong> and is intended for use as is. This document outlines our commitment to your privacy and details how data is handled within our ecosystem.</p>
 
-        <div class="highlight-box">
-            <p><strong>Note:</strong> We prioritize your privacy. We <strong>do not collect personally identifiable information</strong> directly. Your game data belongs to you and is stored securely on your local device.</p>
+    <div class="hub-container">
+        <h1>Mungalabs Developer Hub</h1>
+        <div class="divider"></div>
+
+        <!-- Hyper Pong -->
+        <div class="project-card">
+            <div class="project-info">
+                <div class="project-title">Hyper Pong Speed Challenge</div>
+                <div class="project-desc">Join the Top 1% Speed Elite. Master the Hyper Swing in this high-intensity arcade challenge.</div>
+            </div>
+            <div class="button-group">
+                <a href="hyperpong/privacy.html" class="btn btn-privacy">Privacy</a>
+            </div>
         </div>
 
-        <h2>1. Local Data Management</h2>
-        <p>The core of your gaming experience is managed locally on your device via <strong>Android SharedPreferences</strong>. We utilize this to store:</p>
-        <ul>
-            <li><strong>High Scores</strong> and performance metrics.</li>
-            <li><strong>Virtual Currency (Gold)</strong> balances earned through gameplay.</li>
-            <li><strong>Shop Progress</strong>, including unlocked skins and power-up levels.</li>
-            <li><strong>Prestige Ranks</strong> and <strong>7-Day Streak</strong> milestones.</li>
-        </ul>
-        <p>This data <strong>never leaves your device</strong> unless you manually clear your app storage.</p>
+        <!-- Accountryx -->
+        <div class="project-card">
+            <div class="project-info">
+                <div class="project-title">Accountryx</div>
+                <div class="project-desc">Professional Accounting Mastery Platform (Lessons, Quizzes & Notes)</div>
+            </div>
+            <div class="button-group">
+                <a href="accountryx/privacy.html" class="btn btn-privacy">Privacy</a>
+                <a href="#" class="btn btn-resources">Resources</a>
+            </div>
+        </div>
 
-        <h2>2. Professional Integration & Analytics</h2>
-        <p>To provide a high-quality experience, we integrate industry-standard third-party services:</p>
+        <!-- RideReady -->
+        <div class="project-card">
+            <div class="project-info">
+                <div class="project-title">RideReady: Smart Bike Weather</div>
+                <div class="project-desc">Safety and weather alerts for cyclists.</div>
+            </div>
+            <div class="button-group">
+                <a href="rideready/privacy.html" class="btn btn-privacy">Privacy</a>
+            </div>
+        </div>
 
-        <h3>A. Google AdMob</h3>
-        <p>We utilize <strong>Google AdMob</strong> to display advertisements. AdMob may use your <strong>Advertising ID</strong> to provide relevant ad content. You can manage these preferences in your Android device settings under <strong>Privacy > Ads</strong>.</p>
-        <p><strong>Learn more:</strong> <a href="https://policies.google.com/technologies/ads" target="_blank">How Google uses data</a></p>
-
-        <h3>B. Firebase Analytics</h3>
-        <p>We use <strong>Firebase Analytics</strong> to understand <strong>user engagement</strong>. This allows us to see which game zones are most popular and adjust the difficulty for a better experience. No personal identifiers are used in this process.</p>
-
-        <h3>C. Firebase Crashlytics</h3>
-        <p>To maintain our <strong>"Bulletproof"</strong> stability standard, we use <strong>Crashlytics</strong>. This service sends <strong>anonymized crash reports</strong> if the app encounters an error, helping us fix bugs instantly.</p>
-
-        <h2>3. Children’s Privacy & Safety</h2>
-        <p>Our Service is designed for a general audience and strictly complies with the <strong>Children’s Online Privacy Protection Act (COPPA)</strong> and the <strong>Google Play Families Policy</strong>. We do not knowingly collect information from children under 13.</p>
-
-        <h2>4. Data Security</h2>
-        <p>We take <strong>Data Safety</strong> seriously. All communication between the app and third-party services (Firebase/AdMob) is <strong>encrypted in transit</strong> using secure <strong>HTTPS/TLS</strong> protocols.</p>
-
-        <h2>5. Contact Information</h2>
-        <p>For inquiries regarding this policy or technical support, please reach out to the <strong>Munga Labs</strong> team:</p>
-        <ul>
-            <li><strong>Email:</strong> mungagichmunga@gmail.com</li>
-            <li><strong>Website:</strong> <a href="https://mungalabs.github.io" target="_blank">mungalabs.github.io</a></li>
-        </ul>
-
-        <div class="footer">
+        <footer>
             &copy; 2026 <strong>Munga Labs</strong>. All rights reserved.<br>
             Hyper Pong Speed Challenge &bull; Join the Top 1% Speed Elite
-        </div>
+        </footer>
     </div>
+
 </body>
 </html>
