@@ -1,122 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Hyper Pong Speed Challenge</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy - Hyper Pong Speed Challenge</title>
     <style>
-        :root {
-            --primary-color: #00d2ff;
-            --secondary-color: #3a7bd5;
-            --text-dark: #2c3e50;
-            --text-light: #546e7a;
-            --bg-light: #f5f7fa;
-        }
-        body { 
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
-            line-height: 1.8; 
-            color: var(--text-dark); 
-            max-width: 900px; 
-            margin: 0 auto; 
-            padding: 50px 25px;
-            background-color: var(--bg-light);
-        }
-        .container {
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
-        h1 { 
-            color: var(--secondary-color); 
-            font-size: 2.5em;
-            margin-bottom: 30px;
-            border-left: 8px solid var(--primary-color);
-            padding-left: 20px;
-        }
-        h2 { 
-            color: var(--secondary-color); 
-            font-size: 1.5em;
-            margin-top: 40px; 
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        h3 { color: var(--text-dark); margin-top: 25px; }
-        p, li { color: var(--text-light); font-size: 1.1em; }
-        
-        /* Expert Bold Styling */
-        b, strong { 
-            color: var(--text-dark); 
-            font-weight: 800; 
-        }
-
-        a { color: var(--secondary-color); text-decoration: none; border-bottom: 1px solid transparent; transition: 0.3s; }
-        a:hover { border-bottom: 1px solid var(--secondary-color); }
-        .highlight-box {
-            background: #eef2f7;
-            padding: 20px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-right: 4px solid var(--secondary-color);
-        }
-        .footer { 
-            margin-top: 60px; 
-            font-size: 0.95em; 
-            color: #95a5a6; 
-            text-align: center;
-            border-top: 1px solid #eee; 
-            padding-top: 30px;
-            line-height: 1.6;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; padding: 20px; max-width: 800px; margin: auto; color: #333; background-color: #f4f7f6; }
+        .container { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #1565C0; }
+        h1 { color: #1565C0; margin-bottom: 5px; }
+        h2 { color: #1565C0; margin-top: 35px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        p, li { margin-bottom: 15px; }
+        ul { padding-left: 20px; }
+        .footer { font-size: 0.85em; color: #777; margin-top: 50px; border-top: 1px solid #eee; padding-top: 20px; text-align: center; }
+        a { color: #1565C0; text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+        strong { color: #111; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Privacy Policy</h1>
-        
-        <p><strong>Munga Labs</strong> operates the <strong>Hyper Pong Speed Challenge</strong> mobile application. This Service is provided at <strong>no cost</strong> and is intended for use as is. This document outlines our commitment to your privacy and details how data is handled within our ecosystem.</p>
+        <h1>Privacy Policy for Hyper Pong Speed Challenge</h1>
 
-        <div class="highlight-box">
-            <p><strong>Note:</strong> We prioritize your privacy. We <strong>do not collect personally identifiable information</strong> directly. Your game data belongs to you and is stored securely on your local device.</p>
-        </div>
+        <p>At <strong>Mungalabs</strong>, we believe that gaming should be accessible and private. This Privacy Policy applies to the <strong>Hyper Pong Speed Challenge</strong> application, a fast-paced arcade game designed to test your reflexes and speed.</p>
 
         <h2>1. Local Data Management</h2>
         <p>The core of your gaming experience is managed locally on your device via <strong>Android SharedPreferences</strong>. We utilize this to store:</p>
         <ul>
-            <li><strong>High Scores</strong> and performance metrics.</li>
-            <li><strong>Virtual Currency (Gold)</strong> balances earned through gameplay.</li>
-            <li><strong>Shop Progress</strong>, including unlocked skins and power-up levels.</li>
-            <li><strong>Prestige Ranks</strong> and <strong>7-Day Streak</strong> milestones.</li>
+            <li><strong>High Scores:</strong> Your best performance metrics and speed records.</li>
+            <li><strong>Virtual Currency (Gold):</strong> Balances earned through active gameplay.</li>
+            <li><strong>Shop Progress:</strong> Information regarding unlocked skins and power-up levels.</li>
+            <li><strong>Milestones:</strong> Your Prestige Ranks and <strong>7-Day Streak</strong> achievements.</li>
         </ul>
-        <p>This data <strong>never leaves your device</strong> unless you manually clear your app storage.</p>
+        <p>This data is stored 100% locally on your device and is not transmitted to our servers. It <strong>never leaves your device</strong> unless you manually clear your application cache or delete the app.</p>
 
         <h2>2. Professional Integration & Analytics</h2>
-        <p>To provide a high-quality experience, we integrate industry-standard third-party services:</p>
-
-        <h3>A. Google AdMob</h3>
-        <p>We utilize <strong>Google AdMob</strong> to display advertisements. AdMob may use your <strong>Advertising ID</strong> to provide relevant ad content to improve your experience.</p>
-
-        <h3>B. Firebase Analytics</h3>
-        <p>We use <strong>Firebase Analytics</strong> to understand <strong>user engagement</strong> and optimize game difficulty for our <strong>Top 1% Speed Elite</strong>.</p>
-
-        <h3>C. Firebase Crashlytics</h3>
-        <p>To maintain our <strong>"Bulletproof"</strong> stability standard, we use <strong>Crashlytics</strong> for anonymized crash reporting and instant bug resolution.</p>
-
-        <h2>3. Children’s Privacy & Safety</h2>
-        <p>Our Service strictly complies with the <strong>Children’s Online Privacy Protection Act (COPPA)</strong> and the <strong>Google Play Families Policy</strong>. We do not knowingly collect information from children under 13.</p>
-
-        <h2>4. Data Security</h2>
-        <p>All communication with third-party services is <strong>encrypted in transit</strong> using secure <strong>HTTPS/TLS</strong> protocols to ensure your data remains protected.</p>
-
-        <h2>5. Contact Information</h2>
+        <p>To provide a high-quality, stable experience, we integrate industry-standard third-party services:</p>
         <ul>
-            <li><strong>Email:</strong> mungagichmunga@gmail.com</li>
-            <li><strong>Website:</strong> <a href="https://mungalabs.github.io" target="_blank">mungalabs.github.io</a></li>
+            <li><strong>Google AdMob:</strong> Used to display advertisements. AdMob may access your device’s <strong>Advertising ID</strong> to provide relevant content. You can manage these preferences in your Android device settings.</li>
+            <li><strong>Firebase Analytics:</strong> Used to understand general user engagement, such as identifying popular game zones to adjust difficulty for a better experience. No personal identifiers are used.</li>
+            <li><strong>Firebase Crashlytics:</strong> Used to maintain our <strong>"Bulletproof"</strong> stability standard. This service sends anonymized crash reports to help us fix bugs instantly.</li>
         </ul>
 
+        <h2>3. Children’s Privacy & Safety</h2>
+        <p>Hyper Pong Speed Challenge is designed for a general audience and strictly complies with the <strong>Children’s Online Privacy Protection Act (COPPA)</strong> and the <strong>Google Play Families Policy</strong>.</p>
+        <ul>
+            <li>We do not knowingly collect personally identifiable information from children under 13.</li>
+            <li>All game progress and achievements are stored locally on the device, ensuring the highest level of privacy.</li>
+            <li>Advertisements are configured to follow standard family-friendly guidelines.</li>
+        </ul>
+
+        <h2>4. Data Security</h2>
+        <p>We take <strong>Data Safety</strong> seriously. Although we do not require a user account or cloud login, all communication between the app and third-party services (Firebase/AdMob) is <strong>encrypted in transit</strong> using secure <strong>HTTPS/TLS</strong> protocols.</p>
+
+        <h2>5. User Control</h2>
+        <p>Your privacy is our priority. You have full control over your data. You can clear your game progress, high scores, and currency at any time by clearing the application data in your Android system settings or by deleting the app.</p>
+
+        <h2>6. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in game features or legal requirements. Updates will be posted on this page.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact the Mungalabs team at:<br>
+        <strong>mungagichmunga@gmail.com</strong></p>
+
         <div class="footer">
-            &copy; 2026 <strong>Munga Labs</strong>. All rights reserved.<br>
-            Hyper Pong Speed Challenge &bull; Join the Top 1% Speed Elite
+            &copy; 2026 Mungalabs. All rights reserved.<br>
+            <strong>Hyper Pong Speed Challenge: Join the Top 1% Speed Elite.</strong>
         </div>
     </div>
 </body>
