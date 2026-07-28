@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) - Professional Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NM7PE77EJC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-NM7PE77EJC');
+    </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mungalabs Developer Hub</title>
@@ -11,21 +20,44 @@
         .divider { height: 3px; background-color: #3498db; width: 100%; margin-bottom: 40px; }
         .project-card { border: 1px solid #edf2f7; border-radius: 12px; padding: 25px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
         .project-title { color: #2980b9; font-size: 1.5rem; font-weight: bold; }
-        .btn-privacy { padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; background-color: #27ae60; color: white; }
-        footer { margin-top: 40px; text-align: center; font-weight: 900; color: #000; }
+        .project-desc { color: #7f8c8d; font-size: 1rem; }
+        .btn-privacy { padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: bold; background-color: #27ae60; color: white; transition: 0.2s; }
+        .btn-privacy:hover { background-color: #219150; }
+        footer { margin-top: 40px; text-align: center; color: #000; font-weight: 900; }
     </style>
 </head>
 <body>
     <div class="hub-container">
         <h1>Mungalabs Developer Hub</h1>
         <div class="divider"></div>
+
+        <!-- Turbo Pong Clash (Renamed) -->
         <div class="project-card">
             <div>
                 <div class="project-title">Turbo Pong Clash</div>
-                <p>Join the Top 1% Speed Elite. Master the Turbo Swing in this high-intensity arcade challenge.</p>
+                <div class="project-desc">Join the Top 1% Speed Elite. Master the Turbo Swing in this high-intensity arcade challenge.</div>
             </div>
             <a href="turbo/privacy.html" class="btn-privacy">Privacy</a>
         </div>
+
+        <!-- Accountryx (RETAINED) -->
+        <div class="project-card">
+            <div>
+                <div class="project-title">Accountryx</div>
+                <div class="project-desc">Professional Accounting Mastery Platform (Lessons, Quizzes & Notes)</div>
+            </div>
+            <a href="accountryx/privacy.html" class="btn-privacy">Privacy</a>
+        </div>
+
+        <!-- RideReady (RETAINED) -->
+        <div class="project-card">
+            <div>
+                <div class="project-title">RideReady: Smart Bike Weather</div>
+                <div class="project-desc">Safety and weather alerts for cyclists.</div>
+            </div>
+            <a href="rideready/privacy.html" class="btn-privacy">Privacy</a>
+        </div>
+
         <footer><b>&copy; 2026 Munga Labs &bull; Professional App Portfolio</b></footer>
     </div>
 </body>
